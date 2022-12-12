@@ -40,4 +40,13 @@ const answerArray = [ //answers
 //randomly sort the array of objects
 answerArray.sort(() => 0.5 - Math.random())
 
+function checkAnswer() {
+    for (let i = 0; i < answerArray.length; i ++) {
+        
+    }
+}
+
+
+checkAnswer() // call this function
+
 console.log(answerArray)
