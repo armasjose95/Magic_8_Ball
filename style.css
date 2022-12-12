@@ -23,4 +23,12 @@ span {
 }
 .button {
   background-color: whitesmoke;
+  margin-top: 20px;
+  padding: 9px;
+  font-size: 15px;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.513);
+  color: whitesmoke;
 }
