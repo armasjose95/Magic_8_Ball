@@ -1,3 +1,13 @@
+const questionDisplay = document.querySelector('question')
+const possibleOutcomes = document.querySelector('button')
+const userPick
+
+possibleOutcomes.forEach(possibleOutcomes => possibleOutcomes.addEventListener('click', (e) => {
+    userPick = e.target.id
+    questionDisplay.innerHTML = userPick
+    
+}))
+
 const answerArray = [ //answers
     {
         answer: "It is certain."
@@ -42,7 +52,7 @@ answerArray.sort(() => 0.5 - Math.random())
 
 function checkAnswer() {
     for (let i = 0; i < answerArray.length; i ++) {
-        
+
     }
 }
 
