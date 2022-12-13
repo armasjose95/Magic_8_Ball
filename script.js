@@ -5,7 +5,7 @@ const userPick
 possibleOutcomes.forEach(possibleOutcomes => possibleOutcomes.addEventListener('click', (e) => {
     userPick = e.target.id
     questionDisplay.innerHTML = userPick
-    
+
 }))
 
 const answerArray = [ //answers
@@ -60,3 +60,5 @@ function checkAnswer() {
 checkAnswer() // call this function
 
 console.log(answerArray)
+
+//
