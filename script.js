@@ -1,17 +1,56 @@
-const questionDisplay = document.querySelector('question')
-const possibleOutcomes = document.querySelector('button')
+// need the array of outcomes. need those to be random when the button is clicked
+//change string of outcomes to a #
+//need button to have an event where outcome is shown inside of the box
+
+
+const question = document.querySelector('#question')
+const button = document.querySelector('button')
 let userPick
 
-possibleOutcomes.forEach(possibleOutcomes => possibleOutcomes.addEventListener('click', (e) => {
-    userPick = e.target.id
-    questionDisplay.innerHTML = userPick
-    console.log(possibleOutcomes)
-}))
+button.addEventListener("click", function(e) {
+    alert("clicked")
+})
+
+// function possibleOutcomes() {
+//     document.getElementById("button").addEventListener("click", (e));
+//     alert ("Hello World!");
+
+
+// }
+
+// possibleOutcomes.forEach(possibleOutcomes => possibleOutcomes.addEventListener('click', (e) => {
+//     userPick = e.target.id
+//     questionDisplay.innerHTML = userPick
+//     getResult()
+//     console.log(answerArray)
+// }))
 
 answerArray = ["It is certain.", "It is decidedly so.", "Yes definitely.", "Most likely.", "Good chance.", "Outlooks looks good", 
 "Ask again later.", "Better not tell you now.", "Cannot predict now.", "Don't count on it.", "My sources say no.", "Very doubtful."]
 
-answerArray[0]
+function getResult() {
+
+}
+
+//randomly sort the array of objects
+//answerArray.sort(() => 0.5 - Math.random())
+
+function checkAnswer(button) {
+    for (let i = 0; i < answerArray.length; i ++) {
+        if (answer[i] === answerArray) {
+            return answer[i]
+        }
+    }
+    answerArray.sort(() => 0.5 - Math.random())
+    console.log(button)
+    resultDisplay.innerHTML = button
+}
+
+
+//checkAnswer() // call this function
+
+//console.log(answerArray)
+
 
 // const answerArray = [ //answers
 //     {
@@ -51,24 +90,3 @@ answerArray[0]
 //         answer: "Very doubtful."
 //     }
 // ]
-
-//randomly sort the array of objects
-//answerArray.sort(() => 0.5 - Math.random())
-
-function checkAnswer(button) {
-    for (let i = 0; i < answerArray.length; i ++) {
-        if (answer[i] === answerArray) {
-            return answer[i]
-        }
-    }
-    answerArray.sort(() => 0.5 - Math.random())
-    console.log(button)
-    resultDisplay.innerHTML = button
-}
-
-
-//checkAnswer() // call this function
-
-//console.log(answerArray)
-
-//
