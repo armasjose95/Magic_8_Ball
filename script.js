@@ -3,48 +3,40 @@
 //need button to have an event where outcome is shown inside of the box
 
 
-const question = document.querySelector('#question')
-const button = document.querySelector('button')
-let userPick
+// const question = document.querySelector('#question');
+const askButton = document.getElementsByClassName('.askButton');
+// let userPick
 
-button.addEventListener("click", function(e) {
-    alert("clicked")
-})
+function askButton(){
+    console.log('clicked button')
+}
 
-// function possibleOutcomes() {
-//     document.getElementById("button").addEventListener("click", (e));
-//     alert ("Hello World!");
+// askButton.addEventListener("click", function (e) {
+//     console.log(e);
+// });
 
 
-// }
-
-// possibleOutcomes.forEach(possibleOutcomes => possibleOutcomes.addEventListener('click', (e) => {
-//     userPick = e.target.id
-//     questionDisplay.innerHTML = userPick
-//     getResult()
-//     console.log(answerArray)
-// }))
 
 answerArray = ["It is certain.", "It is decidedly so.", "Yes definitely.", "Most likely.", "Good chance.", "Outlooks looks good", 
 "Ask again later.", "Better not tell you now.", "Cannot predict now.", "Don't count on it.", "My sources say no.", "Very doubtful."]
 
-function getResult() {
+// function getResult() {
 
-}
+// }
 
-//randomly sort the array of objects
-//answerArray.sort(() => 0.5 - Math.random())
+// //randomly sort the array of objects
+// //answerArray.sort(() => 0.5 - Math.random())
 
-function checkAnswer(button) {
-    for (let i = 0; i < answerArray.length; i ++) {
-        if (answer[i] === answerArray) {
-            return answer[i]
-        }
-    }
-    answerArray.sort(() => 0.5 - Math.random())
-    console.log(button)
-    resultDisplay.innerHTML = button
-}
+// function checkAnswer(button) {
+//     for (let i = 0; i < answerArray.length; i ++) {
+//         if (answer[i] === answerArray) {
+//             return answer[i]
+//         }
+//     }
+//     answerArray.sort(() => 0.5 - Math.random())
+//     console.log(button)
+//     resultDisplay.innerHTML = button
+// }
 
 
 //checkAnswer() // call this function
